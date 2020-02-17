@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -9,16 +9,16 @@ namespace api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class PessoaController : ControllerBase
+    public class AnimaisController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
         {
             "Maria", "Joana", "Frida", "Perla", "Catarina", "Josefá", "Tortilha", "Turvalina", "Lili", "Louiza"
         };
 
-        private readonly ILogger<PessoaController> _logger;
+        private readonly ILogger<AnimaisController> _logger;
 
-        public PessoaController(ILogger<PessoaController> logger)
+        public AnimaisController(ILogger<AnimaisController> logger)
         {
             _logger = logger;
         }
