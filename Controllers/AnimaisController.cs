@@ -35,5 +35,11 @@ namespace api.Controllers
             })
             .ToArray();
         }
+
+        [HttpPost]
+        public void Post()
+        {
+            Console.WriteLine("Oiee");
+        }
     }
 }
